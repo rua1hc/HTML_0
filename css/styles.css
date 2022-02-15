@@ -31,3 +31,21 @@ tfoot {
     font-weight: bold;
     background-color: cyan;
 }
+
+ul li:nth-child(odd) {
+    color: deeppink;
+}
+
+a:visited,
+a:link {
+    color: blue;
+}
+a:hover,
+a:focus {
+    color: deeppink;
+}
+
+p::first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}

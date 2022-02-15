@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/css/normalize.css" />
         <link rel="stylesheet" href="/css/styles.css" />
         <style>
-            #lesson {
+            .lesson {
                 font-weight: bold;
             }
         </style>
@@ -36,10 +36,10 @@
             <li><a href="mailto:tatut90@gmail.com">Email Me</a></li>
         </ul>
 
-        <video controls loop src="/videos/ocean.mp4">
+        <video controls autoplay loop src="/videos/ocean.mp4">
             Your browser doesn't support videos.
         </video>
-        <audio controls autoplay loop src="/audios/cn_modific.mp3">
+        <audio controls loop src="/audios/cn_modific.mp3">
             Your browser doesn't support audios.
         </audio>
 
@@ -142,7 +142,7 @@
         </article>
 
         <dl>
-            <span id="lesson">L24: Webpage structure</span>
+            <dt class="lesson">L24: Webpage structure</dt>
             <dt>header</dt>
             <dd>navbar</dd>
             <dd>ul-li</dd>
@@ -157,6 +157,38 @@
             <dd>navbar</dd>
             <dd>ul-li</dd>
         </dl>
+
+        <section id="id-class">
+            <h3 class="lesson">L25-30: Selectors</h3>
+            <article class="id-class">
+                <h4>#id vs .class selector</h4>
+                <ul>
+                    <li>#id > p{}</li>
+                    <li>#id + p{}</li>
+                    <li>#id ~ p{}</li>
+                    <li>a[target]{}</li>
+                    <li>a[target="_blank"]{}</li>
+                    <li>a[href*=google]{}</li>
+                    <li>a[href^=https][href$=.com]{}</li>
+                </ul>
+                <h4>Pseudo class selectors:</h4>
+                <ul>
+                    <li>article p:first-child{}</li>
+                    <li>article p:first-of-type{}</li>
+                    <li>article :last-of-type{}</li>
+                    <li>article :last-child{}</li>
+                    <li>ul li:nth-child(odd){}</li>
+                    <li>a:link {}</li>
+                </ul>
+                <h4>Pseudo element selectors:</h4>
+                <ul>
+                    <li>p::first-letter{}</li>
+                    <li>::selection{}</li>
+                    <li>::before{}</li>
+                    <li>::after{ content:"..."; display: block; }</li>
+                </ul>
+            </article>
+        </section>
 
         <a href="#">Jump to Top</a>
     </body>
