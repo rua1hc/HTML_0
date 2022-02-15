@@ -7,43 +7,45 @@
         <meta name="keywords" content="HTML, CSS" />
         <meta name="description" content="Mimi" />
         <title>Mimi the first journey!</title>
+
+        <link rel="stylesheet" href="styles.css" />
         <style>
-            .usrname {
+            #lesson {
                 font-weight: bold;
-            }
-            img {
-                width: 200px;
-                border-radius: 100px;
-                float: left;
-                margin-right: 10px;
-            }
-            video {
-                width: 400px;
             }
         </style>
     </head>
     <body>
-        <a href="about.html">
-            <!-- <img src="images/mimi_0_1.jpg" alt="x"> -->
-            About Mimi</a
-        >
-        <a href="/images/mimi_0_1.jpg">Mimi Photo</a>
-        <a href="#sect-html">HTML</a>
-        <a href="#sect-css">CSS</a>
-        <a href="https://google.com" target="_blank">Google</a>
-        <a href="mailto:tatut90@gmail.com">Email Me</a>
-
         <img src="images/mimi_0_2.jpg " alt="Mimi on the hype!" />
+
+        <h1>Hello các bạn mình là Mimi</h1>
         <p class="usrname">
             @mimi &lt;HTML&gt; entities! and Copyright &copy;!
         </p>
-        <h1>Hello các bạn mình là Mimi</h1>
+
+        <ul>
+            <li><a href="/images/mimi_0_1.jpg">Mimi Photo</a></li>
+            <li>
+                <a href="about.html">
+                    <!-- <img src="images/mimi_0_1.jpg" alt="x"> -->
+                    About Mimi</a
+                >
+            </li>
+            <li><a href="https://google.com" target="_blank">Google Me</a></li>
+            <li><a href="mailto:tatut90@gmail.com">Email Me</a></li>
+        </ul>
+
         <video controls autoplay loop src="/videos/ocean.mp4">
             Your browser doesn't support videos.
         </video>
-        <audio controls autoplay loop src="/audios/cn_modific.mp3">
+        <audio controls loop src="/audios/cn_modific.mp3">
             Your browser doesn't support audios.
         </audio>
+
+        <ol>
+            <li><a href="#sect-html">HTML</a></li>
+            <li><a href="#sect-css">CSS</a></li>
+        </ol>
 
         <h2 id="sect-html">2.1 HTML</h2>
         <p>HTML Tutorial</p>
@@ -78,6 +80,82 @@
         </p>
         <h3>2.2.1 Css Code</h3>
         <h3>2.2.2 Css Exercise</h3>
+
+        <dl>
+            <dt>L20: (Un)Order list Html - Css</dt>
+            <dd>HyperText Markup Lang</dd>
+            <dt>L20: Description list-term-details</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>Author:</dt>
+            <dd>tatut90@gmail.com</dd>
+        </dl>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">L21 Table</th>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marketing</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Accounting</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th>$300</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="product">
+            <p>
+                <span class="highlight">L22: div vs. span </span>Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Quis, porro.
+            </p>
+            <a href="#">Link</a>
+        </div>
+
+        <article>
+            <h3>
+                <mark>L23: Article-Mark-Figure-Time</mark>
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet.
+                <time datetime="2022-01-01 17:00">Feb 15 2022 14:00pm</time>
+            </p>
+            <figure>
+                <!-- <img src="/images/mimi_0_1.jpg" alt="" /> -->
+                <figcaption>Mi pic's figcaption</figcaption>
+            </figure>
+        </article>
+
+        <dl>
+            <span id="lesson">L24: Webpage structure</span>
+            <dt>header</dt>
+            <dd>navbar</dd>
+            <dd>ul-li</dd>
+            <dt>main</dt>
+            <dd>section1-h2-article1</dd>
+            <dd>section2-h2-article1</dd>
+            <dt>section</dt>
+            <dd>h2-article1-section1</dd>
+            <dt>aside</dt>
+            <dd>not directly related to main content</dd>
+            <dt>footer</dt>
+            <dd>navbar</dd>
+            <dd>ul-li</dd>
+        </dl>
 
         <a href="#">Jump to Top</a>
     </body>
