@@ -146,20 +146,24 @@
             <dt>header</dt>
             <dd>navbar</dd>
             <dd>ul-li</dd>
+
             <dt>main</dt>
             <dd>section1-h2-article1</dd>
             <dd>section2-h2-article1</dd>
+
             <dt>section</dt>
             <dd>h2-article1-section1</dd>
+
             <dt>aside</dt>
             <dd>not directly related to main content</dd>
+
             <dt>footer</dt>
             <dd>navbar</dd>
             <dd>ul-li</dd>
         </dl>
 
         <section id="id-class">
-            <h3 class="lesson">L25-30: Selectors</h3>
+            <h3 class="lesson">L25-32: Selectors</h3>
             <article class="id-class">
                 <h4>#id vs .class selector</h4>
                 <ul>
@@ -180,12 +184,50 @@
                     <li>ul li:nth-child(odd){}</li>
                     <li>a:link {}</li>
                 </ul>
+
                 <h4>Pseudo element selectors:</h4>
                 <ul>
                     <li>p::first-letter{}</li>
                     <li>::selection{}</li>
                     <li>::before{}</li>
                     <li>::after{ content:"..."; display: block; }</li>
+                </ul>
+            </article>
+            <article>
+                <h4 class="lession">L33: Selector Inheritance</h4>
+                <p>
+                    Lorem ipsum <strong>dolor</strong> sit, amet consectetur
+                    adipisicing elit. Perspiciatis, commodi.
+                </p>
+                <h4 class="lession">L34-35: Colors - Gradient</h4>
+                <ul>
+                    <li>rgb() | rgba()</li>
+                    <li>#abcdff</li>
+                    <li>hsl() | hsla()</li>
+                    <li>
+                        background: linear-gradient(to bottom right, blue,
+                        yellow 75%)
+                    </li>
+                    <li>
+                        background: linear-gradient(45deg, blue, yellow, tomato)
+                    </li>
+                    <li>
+                        background: radial-gradient(circle at top left, white,
+                        yellow)
+                    </li>
+                </ul>
+                <h4 class="lession">L36-37: Borders - Shadows</h4>
+                <ul>
+                    <li>border[-top-*]: 1px dashed blue;</li>
+                    <li>border[-top-*]color: blue;</li>
+                    <li>border-width: 1px [2px [xpx xpx]];</li>
+                    <li>border-type: dotted [x [x x]];</li>
+                    <li>border-radius: [1px][100%];</li>
+                </ul>
+                <ul>
+                    <li>box-shadow: 0px 0px 10px gray;</li>
+                    <!-- left up soft color -->
+                    <li>text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);</li>
                 </ul>
             </article>
         </section>
